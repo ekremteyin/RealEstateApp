@@ -1,0 +1,36 @@
+:root{
+  --border:#e5e7eb; --muted:#6b7280; --text:#111827; --bg:#fff;
+  --primary:#2563eb; --primary-weak:#eef2ff; --danger:#dc2626;
+}
+*{box-sizing:border-box}
+body{margin:0; color:var(--text); background:var(--bg); font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+
+.est-shell{min-height:100vh}
+.est-topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.8);backdrop-filter:blur(6px)}
+.brand{font-weight:700}
+
+.est-container{max-width:980px;margin:0 auto;padding:24px}
+.est-title{font-size:32px;margin:16px 0 24px;font-weight:700}
+
+.est-card{border:1px solid var(--border);border-radius:14px;padding:20px;background:#fff}
+.est-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width: 720px){ .est-grid-2{grid-template-columns:1fr} }
+
+.est-field{display:flex;flex-direction:column;gap:6px}
+.est-field label{font-size:14px;color:#374151}
+.est-field input, .est-field select, .est-field textarea{
+  border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:14px;outline:none
+}
+.est-field textarea{resize:vertical}
+
+.est-upload{margin:16px 0}
+.upload-box{border:2px dashed var(--border);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;background:#fafafa}
+.upload-box h4{margin:0 0 4px 0}
+.btn-outline{border:1px solid var(--border);background:#fff;padding:8px 12px;border-radius:8px;cursor:pointer;align-self:flex-start}
+
+.est-error{margin:12px 0;padding:10px 12px;border:1px solid #fecaca;background:#fee2e2;border-radius:8px;color:var(--danger)}
+
+.est-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+.btn-primary{background:var(--primary);color:#fff;border:0;border-radius:10px;padding:10px 14px;cursor:pointer}
+.btn-primary:disabled{opacity:.6;cursor:default}
+.btn-light{border:1px solid var(--border);background:#f8fafc;padding:10px 14px;border-radius:10px;cursor:pointer}

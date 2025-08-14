@@ -1,0 +1,27 @@
+# Gereksiz dosyalar
+*.dll
+*.exe
+*.zip
+*.rar
+*.log
+*.mp4
+*.avi
+*.iso
+
+
+# Node.js projeleri için
+node_modules/
+.env
+
+# IDE klasörleri
+.vscode/
+.idea/
+
+# OS dosyaları
+Thumbs.db
+.DS_Store
+
+bin/
+obj/
+obj
+RealEstate.API/obj/

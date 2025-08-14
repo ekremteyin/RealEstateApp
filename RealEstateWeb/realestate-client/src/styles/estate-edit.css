@@ -1,0 +1,88 @@
+
+.edit-wrap {
+  padding-top: var(--nav-h, 56px);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.edit-card {
+  width: 100%;
+  max-width: 980px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+.edit-title { margin: 0 0 12px; }
+.edit-error { color: #b91c1c; margin-bottom: 12px; }
+
+.cover img {
+  width: 260px; height: 150px; object-fit: cover;
+  border-radius: 8px; border: 1px solid #e5e7eb; display: block;
+}
+
+/* grid ve alanlar */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.col-2 { grid-column: 1 / -1; }
+.spacer-2 { height: 8px; grid-column: 1 / -1; }
+
+.field { display: grid; gap: 6px; }
+.label { font-size: 12px; color: #6b7280; }
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  outline: none;
+}
+.field textarea { resize: vertical; }
+
+/* butonlar */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  border: 1px solid #4f46e5;
+  background: #4f46e5; color: #fff;
+  padding: 10px 16px; border-radius: 10px; cursor: pointer;
+}
+.btn:disabled { opacity: .6; cursor: default; }
+
+.btn-ghost {
+  border: 1px solid #e5e7eb; background: #fff; color: #111827;
+  padding: 10px 16px; border-radius: 10px; cursor: pointer;
+}
+
+.btn-danger {
+  display: block; width: 100%;
+  border: 1px solid #e11d48; background: #fff; color: #e11d48;
+  padding: 8px 10px; border-radius: 10px; cursor: pointer;
+}
+.btn-danger:hover { background: #ffe4e6; }
+
+.muted { color: #6b7280; font-size: 12px; }
+
+
+.upload-block { margin-top: 20px; }
+.block-title { margin: 8px 0; }
+
+.photo-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+.photo-card {
+  border: 1px solid #e5e7eb; border-radius: 12px;
+  padding: 6px; background: #fff;
+}
+.photo-card img {
+  width: 100%; height: 120px; object-fit: cover;
+  border-radius: 8px; margin-bottom: 6px;
+}
